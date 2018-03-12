@@ -8,6 +8,6 @@
     command: ip addr  
     register: my_ip_addr
 
-  - debug: msg="{{ my_ip_addr.stdout }}"
+  - debug: msg="{{ my_ip_addr.stdout_lines }}"
 
 #  shell: host {{ ansible_fqdn }} | awk '{print $NF}' ; test ${PIPESTATUS[0]} -eq 0 
