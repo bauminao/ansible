@@ -2,10 +2,12 @@
 # Try to determine the IP-adresses and HW-adresses from remote hosts.
 #
 
-- hosts: local
-  connection: local 
+- hosts: all
   tasks: 
-  - name: Check Ip Adresses
-  ip4:  
+  - name: Check IP Adresses
+    command: ip addr  
+    register: my_ip_addr
+
+  - debug: msg="{{ my_ip_addr.stdout }}"
 
 #  shell: host {{ ansible_fqdn }} | awk '{print $NF}' ; test ${PIPESTATUS[0]} -eq 0 
