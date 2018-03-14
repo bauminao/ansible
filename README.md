@@ -10,7 +10,8 @@
 
 ### Do an apt-get update on remote host
 - ansible-playbook -i hosts pb/apt_get__update.yml
-In order to use it the most optimzed way, it seems the best underlaying package is: 
+
+In order to use it the most optimized way, it seems the best underlaying package is: 
 aptitude (apt-get install aptitude) 
 
 
