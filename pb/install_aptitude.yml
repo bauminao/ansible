@@ -1,0 +1,13 @@
+---
+# Does an "apt-get update" on remote
+#
+
+- hosts: mine
+  tasks: 
+  - name: Install aptitude
+    apt: 
+      name: "aptitude"
+      state: latest
+      update_cache: yes
+    become: yes
+
