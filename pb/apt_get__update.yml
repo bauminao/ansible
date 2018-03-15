@@ -2,7 +2,7 @@
 # Does an "apt-get update" on remote
 #
 
-- hosts: web
+- hosts: mine
   tasks: 
   - name: Do an apt-get update
     apt: 

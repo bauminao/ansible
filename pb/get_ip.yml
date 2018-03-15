@@ -2,7 +2,7 @@
 # Try to determine the IP-adresses and HW-adresses from remote hosts.
 #
 
-- hosts: all
+- hosts: mine
   tasks: 
   - name: Check IP Adresses
     command: ip addr  
