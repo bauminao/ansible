@@ -13,6 +13,8 @@
 
 In order to use it the most optimized way, it seems the best underlaying package is: 
 aptitude (apt-get install aptitude) 
+You can install it remote via:
+- ansible-playbook -i hosts pb/install_aptitude.yml
 
 
 ### Perhaps something necessary to prevent stupid questions:
